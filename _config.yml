@@ -1,7 +1,7 @@
 # Site settings 配置站点
-title: 'Kaniz Lin's Blog 台灣鋪差的泰國日記'
-description: '昵称悟空，千禧一代，前端开发者/伪极客/灵魂摄影师，热爱技术&设计。很高兴能在这里与你分享我对技术和生活的思考。'
-keyword: '廖柯宇, 廖柯宇的独立博客, 廖柯宇的博客, 前端, 前端开发, 前端博客, javascript, vuejs, nodejs, 设计'
+title: "Kaniz Lin's Blog 台灣鋪差的泰國日記"
+description: 'Kaniz is an enthusiastic programmer who also enjoys accounting, gaming, traveling, and entrepreneurships.'
+keyword: 'kaniz, programmer, programming, web, full-stack, backend, java'
 url: 'http://kanizyrus.github.io' # your host
 
 # if you don't need baseurl, you should leave this value blank.
@@ -15,7 +15,7 @@ nav:
 # Author 配置博主信息
 author: 'Kaniz Lin'
 bio: 'Web programmer, gamer, traveler.'
-avatar: '/assets/img/profile.png'
+avatar: '/assets/img/profile.jpg'
 
 # Search
 search: true
