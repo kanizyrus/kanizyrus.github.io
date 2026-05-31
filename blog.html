@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog by Kaniz — Thoughts on engineering leadership, system design, and building high-performing development teams.">
+  <title>Blog — Kaniz.Dev</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <nav class="nav" id="main-nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Kaniz<span class="dot">.</span>Dev</a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav__links" id="nav-links">
+        <a href="about.html" class="nav__link">About</a>
+        <a href="projects.html" class="nav__link">Projects</a>
+        <a href="blog.html" class="nav__link nav__link--active">Blog</a>
+        <a href="skills.html" class="nav__link">Skills</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <p class="section-header__label">// blog</p>
+        <h1 class="section-header__title">Thoughts & Writing</h1>
+      </div>
+
+      <div class="blog-list" data-reveal-stagger>
+        <a href="#" class="card blog-card" id="blog-post-1">
+          <div class="blog-card__meta">
+            <span class="blog-card__date">2026.05.20</span>
+            <span class="blog-card__dot"></span>
+            <span class="blog-card__read-time">8 min read</span>
+          </div>
+          <h2 class="blog-card__title">The Architecture of Trust: Building Reliable Distributed Systems</h2>
+          <p class="blog-card__excerpt">Reliability isn't just about uptime — it's about building systems your team can reason about, debug under pressure, and evolve with confidence. Here's how I approach system design with trust as the foundation.</p>
+          <div class="blog-card__category">
+            <span class="tag">System Design</span>
+          </div>
+        </a>
+
+        <a href="#" class="card blog-card" id="blog-post-2">
+          <div class="blog-card__meta">
+            <span class="blog-card__date">2026.04.08</span>
+            <span class="blog-card__dot"></span>
+            <span class="blog-card__read-time">6 min read</span>
+          </div>
+          <h2 class="blog-card__title">Leading Without Ego: What I Learned Managing 15 Engineering Teams</h2>
+          <p class="blog-card__excerpt">The hardest part of engineering leadership isn't the technology — it's learning to let go of being the smartest person in the room and instead creating space for others to shine.</p>
+          <div class="blog-card__category">
+            <span class="tag">Leadership</span>
+          </div>
+        </a>
+
+        <a href="#" class="card blog-card" id="blog-post-3">
+          <div class="blog-card__meta">
+            <span class="blog-card__date">2026.03.15</span>
+            <span class="blog-card__dot"></span>
+            <span class="blog-card__read-time">5 min read</span>
+          </div>
+          <h2 class="blog-card__title">Why We Migrated to Go: A Post-Mortem on Language Choice</h2>
+          <p class="blog-card__excerpt">After three years on our Python monolith, we moved critical services to Go. The performance wins were real, but the biggest gain was developer velocity. Here's the full story.</p>
+          <div class="blog-card__category">
+            <span class="tag">Engineering</span>
+          </div>
+        </a>
+
+        <a href="#" class="card blog-card" id="blog-post-4">
+          <div class="blog-card__meta">
+            <span class="blog-card__date">2026.02.01</span>
+            <span class="blog-card__dot"></span>
+            <span class="blog-card__read-time">7 min read</span>
+          </div>
+          <h2 class="blog-card__title">Developer Experience Is Product Experience</h2>
+          <p class="blog-card__excerpt">Internal tooling deserves the same care as customer-facing products. I'll share how we transformed our CI/CD pipeline from a 45-minute nightmare into a 6-minute joy.</p>
+          <div class="blog-card__category">
+            <span class="tag">DevEx</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Kaniz<span class="accent">.</span>Dev &mdash; Built with precision.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/scroll.js"></script>
+</body>
+</html>

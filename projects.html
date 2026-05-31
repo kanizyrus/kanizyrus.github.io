@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects by Kaniz — A showcase of engineering work spanning distributed systems, developer tools, and scalable platforms.">
+  <title>Projects — Kaniz.Dev</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <nav class="nav" id="main-nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Kaniz<span class="dot">.</span>Dev</a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav__links" id="nav-links">
+        <a href="about.html" class="nav__link">About</a>
+        <a href="projects.html" class="nav__link nav__link--active">Projects</a>
+        <a href="blog.html" class="nav__link">Blog</a>
+        <a href="skills.html" class="nav__link">Skills</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <p class="section-header__label">// projects</p>
+        <h1 class="section-header__title">What I've Built</h1>
+      </div>
+
+      <div class="grid grid--2" data-reveal-stagger>
+        <div class="card project-card" id="project-nexus">
+          <h3 class="project-card__title">Nexus Platform</h3>
+          <p class="project-card__desc">A distributed microservices platform handling 10M+ requests daily. Built with event-driven architecture and automated scaling policies.</p>
+          <div class="project-card__tags">
+            <span class="tag">Go</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">gRPC</span>
+            <span class="tag">Redis</span>
+          </div>
+          <div class="project-card__footer">
+            <span class="link-arrow">View Details <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+            <a href="#" class="link-arrow" aria-label="External link"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+        </div>
+
+        <div class="card project-card" id="project-forge">
+          <h3 class="project-card__title">DevForge CLI</h3>
+          <p class="project-card__desc">An intelligent developer toolkit that automates code scaffolding, testing pipelines, and deployment workflows for large engineering teams.</p>
+          <div class="project-card__tags">
+            <span class="tag">Rust</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">CI/CD</span>
+            <span class="tag">Docker</span>
+          </div>
+          <div class="project-card__footer">
+            <span class="link-arrow">View Details <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+            <a href="#" class="link-arrow" aria-label="External link"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+        </div>
+
+        <div class="card project-card" id="project-sentinel">
+          <h3 class="project-card__title">Sentinel Monitor</h3>
+          <p class="project-card__desc">Real-time observability dashboard with custom alerting rules, anomaly detection, and incident response automation for distributed systems.</p>
+          <div class="project-card__tags">
+            <span class="tag">Python</span>
+            <span class="tag">Prometheus</span>
+            <span class="tag">Grafana</span>
+            <span class="tag">WebSocket</span>
+          </div>
+          <div class="project-card__footer">
+            <span class="link-arrow">View Details <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+            <a href="#" class="link-arrow" aria-label="External link"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+        </div>
+
+        <div class="card project-card" id="project-mesh">
+          <h3 class="project-card__title">TeamMesh</h3>
+          <p class="project-card__desc">An internal collaboration platform designed for engineering orgs — async stand-ups, architecture decision records, and knowledge graph search.</p>
+          <div class="project-card__tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">GraphQL</span>
+          </div>
+          <div class="project-card__footer">
+            <span class="link-arrow">View Details <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+            <a href="#" class="link-arrow" aria-label="External link"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Kaniz<span class="accent">.</span>Dev &mdash; Built with precision.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/scroll.js"></script>
+</body>
+</html>
