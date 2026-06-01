@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Blog by Kaniz — Thoughts on engineering leadership, system design, and building high-performing development teams.">
-  <title>Blog — Kaniz.Dev</title>
+  <meta name="description" content="Blog post by Kaniz — Engineering leader sharing thoughts on technology and leadership.">
+  <title>Loading... — Kaniz.Dev</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,16 +35,23 @@
 
   <main class="page">
     <div class="container">
-      <div class="section-header" data-reveal>
-        <p class="section-header__label">// blog</p>
-        <h1 class="section-header__title">Thoughts & Writing</h1>
-      </div>
+      <a href="blog.html" class="link-arrow post-back" id="post-back" data-reveal>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform:rotate(180deg)"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        Back to Blog
+      </a>
 
-      <div class="blog-list" id="blog-list" data-reveal-stagger>
-        <div class="post-loading">
-          <span class="post-loading__cursor"></span>
+      <article class="post">
+        <header class="post__header" data-reveal>
+          <h1 class="post__title" id="post-title">Loading...</h1>
+          <div class="post__meta" id="post-meta"></div>
+        </header>
+
+        <div class="post__body" id="post-body" data-reveal>
+          <div class="post-loading">
+            <span class="post-loading__cursor"></span>
+          </div>
         </div>
-      </div>
+      </article>
     </div>
   </main>
 
@@ -58,8 +65,8 @@
   <script src="js/content.js"></script>
   <script src="js/blog.js"></script>
   <script>
-    // Render blog listing from content adapter
-    BlogRenderer.renderListing('#blog-list');
+    // Initialize post rendering
+    BlogRenderer.renderPost();
   </script>
   <script src="js/scroll.js"></script>
 </body>
