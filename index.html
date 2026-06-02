@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Kaniz.Dev — Engineering Leader building the future. Portfolio of a developer lead specializing in scalable systems and team leadership.">
-  <title>Kaniz.Dev — Engineering Leader</title>
+  <meta name="description" content="Kaniz.Dev — Essays and projects on AI, engineering leadership, fintech, game systems, and building things that matter. By Ping-Hsien Lin.">
+  <title>Kaniz.Dev</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/base.css">
@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/animations.css">
-  <link rel="stylesheet" href="css/pages.css">
 </head>
 <body>
   <nav class="nav" id="main-nav">
@@ -26,41 +25,167 @@
         <span></span><span></span><span></span>
       </button>
       <div class="nav__links" id="nav-links">
+        <a href="blog.html" class="nav__link">Essays</a>
         <a href="about.html" class="nav__link">About</a>
-        <a href="projects.html" class="nav__link">Projects</a>
-        <a href="blog.html" class="nav__link">Blog</a>
-        <a href="skills.html" class="nav__link">Skills</a>
       </div>
     </div>
   </nav>
 
   <main>
+    <!-- Hero -->
     <section class="hero" id="hero">
-      <h1 class="hero__name" data-reveal>
-        Kaniz<span class="dot">.</span>Dev<span class="hero__cursor"></span>
-      </h1>
-      <p class="hero__tagline" data-reveal>
-        Engineering Leader <span class="separator">&middot;</span> Building the Future
-      </p>
-      <div class="hero__actions" data-reveal>
-        <a href="projects.html" class="btn btn--primary">View Projects</a>
-        <a href="blog.html" class="btn">Read Blog</a>
+      <div class="container">
+        <div class="hero__content" data-reveal>
+          <h1 class="hero__title">I build systems, lead people, and&nbsp;write about what starts to&nbsp;feel <em>off</em> before things visibly&nbsp;break.</h1>
+          <p class="hero__description">Engineering leader, AI practitioner, former fintech founder. This is where I think out loud about software, organizations, and the messy reality of making things that work.</p>
+          <div class="hero__actions">
+            <a href="blog.html" class="hero__cta hero__cta--primary">
+              Read Essays
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a href="#projects" class="hero__cta">
+              Explore Projects
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="hero__scroll-hint">
-        <span>scroll</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+    </section>
+
+    <!-- Featured Essays -->
+    <section class="featured" id="featured">
+      <div class="container">
+        <div class="section-label" data-reveal>Featured Essays</div>
+        <div class="featured__list" data-reveal-stagger>
+          <a href="post.html?slug=architecture-of-trust" class="featured__item">
+            <div class="featured__meta">
+              <span>2026.05.20</span>
+              <span class="featured__meta-dot"></span>
+              <span>8 min read</span>
+              <span class="featured__meta-dot"></span>
+              <span>System Design</span>
+            </div>
+            <h2 class="featured__title">The Architecture of Trust: Building Reliable Distributed Systems</h2>
+            <p class="featured__excerpt">Reliability isn't just about uptime — it's about building systems your team can reason about, debug under pressure, and evolve with confidence.</p>
+          </a>
+          <a href="post.html?slug=leading-without-ego" class="featured__item">
+            <div class="featured__meta">
+              <span>2026.04.08</span>
+              <span class="featured__meta-dot"></span>
+              <span>6 min read</span>
+              <span class="featured__meta-dot"></span>
+              <span>Leadership</span>
+            </div>
+            <h2 class="featured__title">Leading Without Ego: What I Learned Managing 15 Engineering Teams</h2>
+            <p class="featured__excerpt">The hardest part of engineering leadership isn't the technology — it's learning to let go of being the smartest person in the room.</p>
+          </a>
+          <a href="post.html?slug=developer-experience-is-product-experience" class="featured__item">
+            <div class="featured__meta">
+              <span>2026.02.01</span>
+              <span class="featured__meta-dot"></span>
+              <span>7 min read</span>
+              <span class="featured__meta-dot"></span>
+              <span>DevEx</span>
+            </div>
+            <h2 class="featured__title">Developer Experience Is Product Experience</h2>
+            <p class="featured__excerpt">Internal tooling deserves the same care as customer-facing products. Here's how we turned a 45-minute pipeline into a 6-minute one.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Areas of Exploration -->
+    <section class="areas" id="areas">
+      <div class="container">
+        <div class="section-label" data-reveal>Areas of Exploration</div>
+        <div class="areas__grid" data-reveal-stagger>
+          <div class="area">
+            <h3 class="area__title">AI &amp; Applied Intelligence</h3>
+            <p class="area__desc">Building with LLMs, AI-assisted development, and what happens when intelligence becomes infrastructure rather than a feature.</p>
+          </div>
+          <div class="area">
+            <h3 class="area__title">Engineering Leadership</h3>
+            <p class="area__desc">Scaling teams, navigating technical strategy, and the quiet discipline of leading without ego when the system is larger than any one person.</p>
+          </div>
+          <div class="area">
+            <h3 class="area__title">Fintech &amp; Financial Systems</h3>
+            <p class="area__desc">Former founder. Interested in the architecture of money, trust, and what regulated technology demands that move-fast culture doesn't prepare you for.</p>
+          </div>
+          <div class="area">
+            <h3 class="area__title">Game Systems &amp; Interactive Design</h3>
+            <p class="area__desc">Game mechanics as a lens for understanding complex systems, incentive structures, and why the most interesting bugs are often design problems.</p>
+          </div>
+          <div class="area">
+            <h3 class="area__title">Software Architecture</h3>
+            <p class="area__desc">Distributed systems, developer experience, and the craft of building things that survive contact with reality, users, and the next team to maintain them.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects & Experiments -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="section-label" data-reveal>Projects &amp; Experiments</div>
+        <div class="projects__list" data-reveal-stagger>
+          <a href="#" class="project">
+            <span class="project__name">Nexus Platform</span>
+            <span class="project__desc">Distributed microservices handling 10M+ daily requests</span>
+            <span class="project__arrow">→</span>
+          </a>
+          <a href="#" class="project">
+            <span class="project__name">DevForge CLI</span>
+            <span class="project__desc">Intelligent developer toolkit for large engineering teams</span>
+            <span class="project__arrow">→</span>
+          </a>
+          <a href="#" class="project">
+            <span class="project__name">Sentinel Monitor</span>
+            <span class="project__desc">Real-time observability with anomaly detection</span>
+            <span class="project__arrow">→</span>
+          </a>
+          <a href="#" class="project">
+            <span class="project__name">TeamMesh</span>
+            <span class="project__desc">Async collaboration platform for engineering orgs</span>
+            <span class="project__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Current Focus -->
+    <section class="focus" id="focus">
+      <div class="container">
+        <div class="section-label" data-reveal>Current Focus</div>
+        <p class="focus__text" data-reveal>Currently exploring <em>AI-assisted code generation workflows</em>, writing about <em>engineering leadership transitions</em>, and prototyping a <em>game systems simulation engine</em>. Most of my thinking ends up as essays here or as code on GitHub.</p>
+      </div>
+    </section>
+
+    <!-- About (Brief) -->
+    <section class="about-brief" id="about-brief">
+      <div class="container">
+        <div class="section-label" data-reveal>About</div>
+        <p class="about-brief__text" data-reveal>Ping-Hsien Lin (Kaniz). Engineering leader, AI practitioner and ambassador, former fintech founder, software architect, game development enthusiast, writer, systems thinker. I build things, lead people, and write about what I learn along the way.</p>
+        <div class="about-brief__links" data-reveal>
+          <a href="about.html">Full bio →</a>
+          <a href="https://github.com/kanizyrus" target="_blank" rel="noopener">GitHub →</a>
+          <a href="#" target="_blank" rel="noopener">LinkedIn →</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Kaniz<span class="accent">.</span>Dev &mdash; Built with precision.</p>
+    <div class="footer__inner">
+      <p>&copy; 2026 Kaniz.Dev</p>
+      <div class="footer__links">
+        <a href="blog.html">Essays</a>
+        <a href="about.html">About</a>
+        <a href="https://github.com/kanizyrus" target="_blank" rel="noopener">GitHub</a>
+      </div>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
-  <script src="js/cursor.js"></script>
   <script src="js/scroll.js"></script>
 </body>
 </html>
