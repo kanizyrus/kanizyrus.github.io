@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="About Kaniz — Engineering leader with a passion for building scalable systems and empowering development teams.">
+  <meta name="description" content="About Ping-Hsien Lin (Kaniz) — Engineering leader, AI practitioner, former fintech founder, writer, and systems thinker.">
   <title>About — Kaniz.Dev</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/base.css">
@@ -25,59 +25,53 @@
         <span></span><span></span><span></span>
       </button>
       <div class="nav__links" id="nav-links">
+        <a href="blog.html" class="nav__link">Essays</a>
         <a href="about.html" class="nav__link nav__link--active">About</a>
-        <a href="projects.html" class="nav__link">Projects</a>
-        <a href="blog.html" class="nav__link">Blog</a>
-        <a href="skills.html" class="nav__link">Skills</a>
       </div>
     </div>
   </nav>
 
   <main class="page">
     <div class="container">
-      <div class="section-header" data-reveal>
-        <p class="section-header__label">// about</p>
-        <h1 class="section-header__title">Who I Am</h1>
-      </div>
+      <div class="section-label" data-reveal>About</div>
 
-      <div class="about-grid">
-        <div class="about-bio" data-reveal>
-          <p>I'm an engineering leader who believes that great software is built by empowered teams, not just talented individuals. With years of experience across the full stack, I've led cross-functional teams in shipping products that scale to millions of users.</p>
-          <p>My approach combines deep technical expertise with a focus on developer experience, system reliability, and clear communication. I care about the craft of software — clean architecture, thoughtful abstractions, and code that tells a story.</p>
-          <p>When I'm not writing code or reviewing PRs, you'll find me mentoring engineers, designing system architectures, or exploring the intersection of technology and leadership.</p>
+      <article class="about-page">
+        <h1 class="about-page__title" data-reveal>Ping-Hsien Lin (Kaniz)</h1>
+
+        <div class="about-page__body" data-reveal>
+          <p>I'm an engineering leader who has spent the better part of a decade building software systems and the teams around them. I've led cross-functional engineering organizations, founded a fintech company, and shipped products across domains ranging from financial infrastructure to developer tooling to AI-assisted workflows.</p>
+
+          <p>My work sits at the intersection of several things: building distributed systems that hold up under real-world pressure, leading engineering teams through ambiguity, and writing about what I notice when things start to go sideways — in code, in organizations, in thinking.</p>
+
+          <p>I'm particularly interested in applied AI — not the hype cycle, but the unglamorous work of embedding intelligence into existing systems and workflows in ways that actually help people work better. I serve as an AI ambassador because I believe the most important AI work is happening in integration, not invention.</p>
+
+          <p>Before my current work, I founded a fintech company where I learned that building regulated technology demands a very different kind of discipline than Silicon Valley's move-fast ethos prepares you for. That experience shaped how I think about trust, systems design, and the weight of handling other people's money.</p>
+
+          <p>I also think a lot about game systems — not just as entertainment, but as a lens for understanding incentive structures, emergent behavior, and the design problems that only surface when complex agents interact with your carefully laid plans.</p>
+
+          <p>This site is where I think out loud. The essays are attempts to make sense of what I observe; the projects are experiments in building things that reflect that thinking.</p>
         </div>
-        <div class="about-image" data-reveal>
-          <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:var(--text-muted);font-size:var(--fs-small);">
-            [ your photo here ]
+
+        <div class="about-page__connect" data-reveal>
+          <div class="section-label">Elsewhere</div>
+          <div class="about-page__links">
+            <a href="https://github.com/kanizyrus" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="blog.html">Essays</a>
           </div>
         </div>
-      </div>
-
-      <div class="stats-row" data-reveal-stagger>
-        <div class="stat">
-          <div class="stat__number">8+</div>
-          <div class="stat__label">Years Experience</div>
-        </div>
-        <div class="stat">
-          <div class="stat__number">15+</div>
-          <div class="stat__label">Teams Led</div>
-        </div>
-        <div class="stat">
-          <div class="stat__number">50+</div>
-          <div class="stat__label">Projects Shipped</div>
-        </div>
-      </div>
-
-      <div class="quote-block" data-reveal>
-        <p>"The best engineering leaders don't just build systems — they build the teams that build systems. Technical excellence is the baseline; what matters is creating an environment where everyone can do their best work."</p>
-        <cite>— My leadership philosophy</cite>
-      </div>
+      </article>
     </div>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Kaniz<span class="accent">.</span>Dev &mdash; Built with precision.</p>
+    <div class="footer__inner">
+      <p>&copy; 2026 Kaniz.Dev</p>
+      <div class="footer__links">
+        <a href="blog.html">Essays</a>
+        <a href="about.html">About</a>
+        <a href="https://github.com/kanizyrus" target="_blank" rel="noopener">GitHub</a>
+      </div>
     </div>
   </footer>
 

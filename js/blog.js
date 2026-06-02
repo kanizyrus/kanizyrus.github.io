@@ -24,7 +24,7 @@ const BlogRenderer = (function() {
   function createBlogCard(post) {
     const card = document.createElement('a');
     card.href = `post.html?slug=${post.slug}`;
-    card.className = 'card blog-card';
+    card.className = 'blog-card';
     card.id = `blog-post-${post.slug}`;
 
     card.innerHTML = `
@@ -94,7 +94,7 @@ const BlogRenderer = (function() {
 
       if (!post) {
         titleEl.textContent = 'Post Not Found';
-        bodyEl.innerHTML = '<p>The requested post could not be found.</p><p><a href="blog.html" class="link-arrow">← Back to Blog</a></p>';
+        bodyEl.innerHTML = '<p>The requested post could not be found.</p><p><a href="blog.html" class="link-arrow">← Back to Essays</a></p>';
         document.title = 'Not Found — Kaniz.Dev';
         return;
       }

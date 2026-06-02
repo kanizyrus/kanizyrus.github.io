@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Blog post by Kaniz — Engineering leader sharing thoughts on technology and leadership.">
+  <meta name="description" content="Essay by Ping-Hsien Lin (Kaniz) — Thinking about systems, leadership, and technology.">
   <title>Loading... — Kaniz.Dev</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/base.css">
@@ -25,20 +25,15 @@
         <span></span><span></span><span></span>
       </button>
       <div class="nav__links" id="nav-links">
+        <a href="blog.html" class="nav__link nav__link--active">Essays</a>
         <a href="about.html" class="nav__link">About</a>
-        <a href="projects.html" class="nav__link">Projects</a>
-        <a href="blog.html" class="nav__link nav__link--active">Blog</a>
-        <a href="skills.html" class="nav__link">Skills</a>
       </div>
     </div>
   </nav>
 
   <main class="page">
     <div class="container">
-      <a href="blog.html" class="link-arrow post-back" id="post-back" data-reveal>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform:rotate(180deg)"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-        Back to Blog
-      </a>
+      <a href="blog.html" class="post-back" id="post-back" data-reveal>← Essays</a>
 
       <article class="post">
         <header class="post__header" data-reveal>
@@ -56,8 +51,13 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Kaniz<span class="accent">.</span>Dev &mdash; Built with precision.</p>
+    <div class="footer__inner">
+      <p>&copy; 2026 Kaniz.Dev</p>
+      <div class="footer__links">
+        <a href="blog.html">Essays</a>
+        <a href="about.html">About</a>
+        <a href="https://github.com/kanizyrus" target="_blank" rel="noopener">GitHub</a>
+      </div>
     </div>
   </footer>
 
@@ -65,7 +65,6 @@
   <script src="js/content.js"></script>
   <script src="js/blog.js"></script>
   <script>
-    // Initialize post rendering
     BlogRenderer.renderPost();
   </script>
   <script src="js/scroll.js"></script>

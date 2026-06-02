@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Blog by Kaniz — Thoughts on engineering leadership, system design, and building high-performing development teams.">
-  <title>Blog — Kaniz.Dev</title>
+  <meta name="description" content="Essays by Ping-Hsien Lin (Kaniz) — Writing on AI, engineering leadership, system design, fintech, and game systems.">
+  <title>Essays — Kaniz.Dev</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/base.css">
@@ -25,22 +25,19 @@
         <span></span><span></span><span></span>
       </button>
       <div class="nav__links" id="nav-links">
+        <a href="blog.html" class="nav__link nav__link--active">Essays</a>
         <a href="about.html" class="nav__link">About</a>
-        <a href="projects.html" class="nav__link">Projects</a>
-        <a href="blog.html" class="nav__link nav__link--active">Blog</a>
-        <a href="skills.html" class="nav__link">Skills</a>
       </div>
     </div>
   </nav>
 
   <main class="page">
     <div class="container">
-      <div class="section-header" data-reveal>
-        <p class="section-header__label">// blog</p>
-        <h1 class="section-header__title">Thoughts & Writing</h1>
-      </div>
+      <div class="section-label" data-reveal>Essays</div>
+      <h1 class="essays-page__title" data-reveal>Writing</h1>
+      <p class="essays-page__desc" data-reveal>Long-form thinking on systems, leadership, and the craft of building things that work.</p>
 
-      <div class="blog-list" id="blog-list" data-reveal-stagger>
+      <div class="essays-list" id="blog-list" data-reveal-stagger>
         <div class="post-loading">
           <span class="post-loading__cursor"></span>
         </div>
@@ -49,8 +46,13 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Kaniz<span class="accent">.</span>Dev &mdash; Built with precision.</p>
+    <div class="footer__inner">
+      <p>&copy; 2026 Kaniz.Dev</p>
+      <div class="footer__links">
+        <a href="blog.html">Essays</a>
+        <a href="about.html">About</a>
+        <a href="https://github.com/kanizyrus" target="_blank" rel="noopener">GitHub</a>
+      </div>
     </div>
   </footer>
 
@@ -58,7 +60,6 @@
   <script src="js/content.js"></script>
   <script src="js/blog.js"></script>
   <script>
-    // Render blog listing from content adapter
     BlogRenderer.renderListing('#blog-list');
   </script>
   <script src="js/scroll.js"></script>
