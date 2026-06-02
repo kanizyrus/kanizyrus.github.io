@@ -4,9 +4,9 @@
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba(12, 12, 12, 0.92);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: rgba(17, 17, 16, 0.95);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--border);
 }
 
@@ -17,13 +17,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 64px;
+  height: 60px;
 }
 
 .nav__logo {
   font-family: var(--font-serif);
-  font-size: 1.15rem;
-  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 400;
   color: var(--text-primary);
   letter-spacing: -0.01em;
 }
@@ -43,27 +43,18 @@
 }
 
 .nav__link {
-  font-family: var(--font-sans);
-  font-size: var(--fs-small);
+  font-family: var(--font-mono);
+  font-size: var(--fs-label);
   color: var(--text-muted);
-  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   padding: var(--space-xs) 0;
-  transition: color var(--transition-fast);
+  transition: color var(--transition-base);
 }
 
 .nav__link:hover,
 .nav__link--active {
-  color: var(--text-primary);
-}
-
-.nav__link--active::after {
-  content: '';
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: var(--text-muted);
+  color: var(--text-secondary);
 }
 
 /* Mobile */
@@ -79,16 +70,16 @@
 
 .nav__toggle span {
   display: block;
-  width: 20px;
-  height: 1.5px;
-  background: var(--text-primary);
+  width: 18px;
+  height: 1px;
+  background: var(--text-secondary);
   transition:
     transform var(--transition-base),
     opacity var(--transition-fast);
 }
 
 .nav__toggle.active span:nth-child(1) {
-  transform: rotate(45deg) translate(4.5px, 4.5px);
+  transform: rotate(45deg) translate(4px, 4px);
 }
 
 .nav__toggle.active span:nth-child(2) {
@@ -96,7 +87,7 @@
 }
 
 .nav__toggle.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(4.5px, -4.5px);
+  transform: rotate(-45deg) translate(4px, -4px);
 }
 
 @media (max-width: 640px) {
@@ -106,10 +97,10 @@
 
   .nav__links {
     position: fixed;
-    top: 64px;
+    top: 60px;
     left: 0;
     right: 0;
-    background: rgba(12, 12, 12, 0.97);
+    background: rgba(17, 17, 16, 0.98);
     flex-direction: column;
     padding: var(--space-xl);
     gap: var(--space-lg);
@@ -129,6 +120,6 @@
   }
 
   .nav__link {
-    font-size: var(--fs-body);
+    font-size: var(--fs-small);
   }
 }

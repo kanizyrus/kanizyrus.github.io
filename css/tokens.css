@@ -1,34 +1,36 @@
 :root {
-  /* Colors — calm, dark, editorial */
-  --bg-primary: #0c0c0c;
-  --bg-secondary: #141414;
-  --bg-tertiary: #1c1c1c;
-  --text-primary: #ededed;
-  --text-secondary: #a0a0a0;
-  --text-muted: #5a5a5a;
-  --accent: #6ee7b7;
-  --accent-hover: #a7f3d0;
-  --accent-dim: #2d6a5a;
-  --accent-subtle: rgba(110, 231, 183, 0.06);
-  --border: rgba(255, 255, 255, 0.06);
-  --border-hover: rgba(255, 255, 255, 0.12);
+  /* Palette — warm graphite, not cold tech */
+  --bg-primary: #111110;
+  --bg-secondary: #181817;
+  --bg-tertiary: #1f1f1d;
+  --bg-surface: #242422;
+  --text-primary: #e8e4df;
+  --text-secondary: #9b9590;
+  --text-muted: #5c5752;
+  --accent: #c4956a;
+  --accent-hover: #d4a87e;
+  --accent-dim: #7a5d42;
+  --accent-subtle: rgba(196, 149, 106, 0.07);
+  --border: rgba(255, 255, 255, 0.05);
+  --border-hover: rgba(255, 255, 255, 0.1);
 
-  /* Typography — editorial trio */
-  --font-serif: 'Newsreader', 'Georgia', 'Times New Roman', serif;
+  /* Typography — editorial, literary */
+  --font-serif: 'Newsreader', 'Georgia', serif;
   --font-sans: 'Inter', -apple-system, 'Segoe UI', sans-serif;
   --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
 
-  /* Type scale — generous editorial sizing */
-  --fs-display: clamp(2.4rem, 4.5vw, 3.6rem);
-  --fs-h1: clamp(1.8rem, 3vw, 2.4rem);
+  /* Type scale — generous, readable */
+  --fs-display: clamp(2.2rem, 4vw, 3.2rem);
+  --fs-h1: clamp(1.7rem, 2.8vw, 2.2rem);
   --fs-h2: clamp(1.3rem, 2vw, 1.6rem);
-  --fs-h3: clamp(1.05rem, 1.5vw, 1.2rem);
+  --fs-h3: clamp(1.05rem, 1.4vw, 1.15rem);
   --fs-body: 1.0625rem;
   --fs-body-lg: 1.1875rem;
   --fs-small: 0.875rem;
   --fs-xs: 0.75rem;
+  --fs-label: 0.6875rem;
 
-  /* Spacing */
+  /* Spacing — deliberate rhythm */
   --space-xs: 0.5rem;
   --space-sm: 0.75rem;
   --space-md: 1rem;
@@ -37,16 +39,17 @@
   --space-2xl: 3rem;
   --space-3xl: 4.5rem;
   --space-4xl: 6rem;
+  --space-5xl: 8rem;
   --space-section: clamp(5rem, 10vw, 8rem);
-  --max-width: 1100px;
-  --max-width-prose: 680px;
+  --max-width: 1060px;
+  --max-width-prose: 660px;
 
   /* Borders */
-  --radius-sm: 4px;
-  --radius-md: 6px;
+  --radius-sm: 3px;
+  --radius-md: 5px;
 
-  /* Transitions */
+  /* Transitions — unhurried */
   --transition-fast: 150ms ease;
-  --transition-base: 250ms ease;
-  --transition-slow: 400ms ease;
+  --transition-base: 300ms ease;
+  --transition-slow: 500ms ease;
 }

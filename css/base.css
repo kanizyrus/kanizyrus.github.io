@@ -4,6 +4,8 @@ body {
   color: var(--text-secondary);
   background-color: var(--bg-primary);
   line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
@@ -11,13 +13,13 @@ body {
   color: var(--bg-primary);
 }
 
-/* Scrollbar */
+/* Scrollbar — nearly invisible */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--bg-primary);
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -29,8 +31,8 @@ body {
   background: var(--text-muted);
 }
 
-/* Typography */
-h1, h2, h3 {
+/* Headings — serif for authority */
+h1, h2, h3, h4 {
   color: var(--text-primary);
   line-height: 1.25;
 }
@@ -38,14 +40,15 @@ h1, h2, h3 {
 h1 {
   font-family: var(--font-serif);
   font-size: var(--fs-h1);
-  font-weight: 500;
-  letter-spacing: -0.01em;
+  font-weight: 400;
+  letter-spacing: -0.015em;
 }
 
 h2 {
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   font-size: var(--fs-h2);
-  font-weight: 600;
+  font-weight: 400;
+  letter-spacing: -0.01em;
 }
 
 h3 {
@@ -56,10 +59,11 @@ h3 {
 
 p {
   color: var(--text-secondary);
-  line-height: 1.75;
+  line-height: 1.8;
   max-width: var(--max-width-prose);
 }
 
+/* Links — understated until hovered */
 a {
   color: inherit;
   text-decoration: none;
@@ -70,15 +74,17 @@ a:hover {
   color: var(--text-primary);
 }
 
+/* Code — quiet, not flashy */
 code {
   font-family: var(--font-mono);
-  font-size: 0.88em;
+  font-size: 0.85em;
   color: var(--accent);
   background: var(--accent-subtle);
-  padding: 0.15em 0.4em;
+  padding: 0.15em 0.45em;
   border-radius: var(--radius-sm);
 }
 
+/* Horizontal rules */
 hr {
   border: none;
   border-top: 1px solid var(--border);
@@ -94,30 +100,21 @@ hr {
 }
 
 .page {
-  padding-top: calc(64px + var(--space-3xl));
+  padding-top: calc(60px + var(--space-3xl));
   padding-bottom: var(--space-section);
   min-height: 100vh;
 }
 
-/* Section Label */
+/* Section Label — marginalia style */
 .section-label {
   font-family: var(--font-mono);
-  font-size: var(--fs-xs);
+  font-size: var(--fs-label);
   color: var(--text-muted);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   margin-bottom: var(--space-2xl);
-  display: flex;
-  align-items: center;
-  gap: var(--space-md);
-}
-
-.section-label::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: var(--border);
-  max-width: 120px;
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--border);
 }
 
 /* Footer */
@@ -136,7 +133,7 @@ hr {
 }
 
 .footer p {
-  font-size: var(--fs-small);
+  font-size: var(--fs-xs);
   color: var(--text-muted);
 }
 
@@ -145,13 +142,15 @@ hr {
 }
 
 .footer a:hover {
-  color: var(--text-primary);
+  color: var(--text-secondary);
 }
 
 .footer__links {
   display: flex;
   gap: var(--space-lg);
-  font-size: var(--fs-small);
+  font-size: var(--fs-xs);
+  font-family: var(--font-mono);
+  letter-spacing: 0.03em;
 }
 
 @media (max-width: 640px) {
