@@ -1,5 +1,5 @@
 // Kaniz.Dev — Main JS
-// Handles: navigation toggle, active link detection
+// Navigation toggle, active link detection
 
 (function() {
   'use strict';
@@ -41,21 +41,5 @@
       link.classList.add('nav__link--active');
     }
   });
-
-  // Nav background on scroll
-  const nav = document.getElementById('main-nav');
-  let lastScroll = 0;
-
-  window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-
-    if (currentScroll > 50) {
-      nav.style.borderBottomColor = 'rgba(255, 255, 255, 0.08)';
-    } else {
-      nav.style.borderBottomColor = 'var(--border)';
-    }
-
-    lastScroll = currentScroll;
-  }, { passive: true });
 
 })();
