@@ -22,6 +22,24 @@
   margin-bottom: 0;
 }
 
+.about-page__body h2 {
+  font-family: var(--font-serif);
+  font-size: var(--fs-h2);
+  font-weight: 400;
+  color: var(--text-primary);
+  margin-top: var(--space-2xl);
+  margin-bottom: var(--space-lg);
+}
+
+.about-page__body strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.about-page__body em {
+  font-style: italic;
+}
+
 .about-page__connect {
   margin-top: var(--space-3xl);
   padding-top: var(--space-xl);
