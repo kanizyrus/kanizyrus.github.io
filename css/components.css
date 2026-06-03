@@ -1,85 +1,14 @@
-/* Tags — quiet, functional */
+/* Tags */
 .tag {
   display: inline-block;
   font-family: var(--font-mono);
   font-size: var(--fs-label);
   color: var(--text-muted);
-  background: transparent;
-  border: 1px solid var(--border);
-  padding: 0.3em 0.7em;
+  background: var(--bg-secondary);
+  border: none;
+  padding: 0.25em 0.6em;
   border-radius: var(--radius-sm);
-  letter-spacing: 0.03em;
-  transition: color var(--transition-base), border-color var(--transition-base);
-}
-
-.tag:hover {
-  color: var(--text-secondary);
-  border-color: var(--border-hover);
-}
-
-/* Cards — minimal surface */
-.card {
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid var(--border);
-  border-radius: 0;
-  padding: var(--space-xl) 0;
-  transition: border-color var(--transition-base);
-}
-
-.card:hover {
-  border-bottom-color: var(--border-hover);
-}
-
-/* Buttons — text-based, no fill */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-xs);
-  font-family: var(--font-mono);
-  font-size: var(--fs-label);
-  color: var(--text-muted);
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid var(--border);
-  padding: 0.5em 0;
-  border-radius: 0;
-  cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  transition: color var(--transition-base), border-color var(--transition-base);
-  text-decoration: none;
-}
-
-.btn:hover {
-  color: var(--text-primary);
-  border-bottom-color: var(--text-muted);
-}
-
-.btn--accent {
-  color: var(--accent);
-  border-bottom-color: var(--accent-dim);
-}
-
-.btn--accent:hover {
-  color: var(--accent-hover);
-  border-bottom-color: var(--accent);
-}
-
-/* Link arrow */
-.link-arrow {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-xs);
-  font-family: var(--font-mono);
-  font-size: var(--fs-label);
-  color: var(--text-muted);
-  letter-spacing: 0.05em;
-  transition: color var(--transition-base);
-}
-
-.link-arrow:hover {
-  color: var(--text-secondary);
+  letter-spacing: 0.02em;
 }
 
 /* Loading */
