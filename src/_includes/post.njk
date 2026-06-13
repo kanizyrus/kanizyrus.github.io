@@ -1,0 +1,29 @@
+---
+layout: base.njk
+navActive: essays
+extraCss:
+  - pages.css
+---
+
+<main class="page">
+  <div class="container">
+    <a href="/blog/" class="post-back" data-reveal>← Essays</a>
+
+    <article class="post">
+      <header class="post__header" data-reveal>
+        <h1 class="post__title">{{ title }}</h1>
+        <div class="post__meta">
+          <span class="post-meta__date">{{ date | formatDate }}</span>
+          <span class="post-meta__dot"></span>
+          <span class="post-meta__read-time">{{ readTime }}</span>
+          <span class="post-meta__dot"></span>
+          <span class="post-meta__category">{{ category }}</span>
+        </div>
+      </header>
+
+      <div class="post__body" data-reveal>
+        {{ content | safe }}
+      </div>
+    </article>
+  </div>
+</main>

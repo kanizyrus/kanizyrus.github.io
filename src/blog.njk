@@ -1,0 +1,31 @@
+---
+layout: base.njk
+title: Essays
+navActive: essays
+extraCss:
+  - pages.css
+description: "Essays by Ping-Hsien Lin (Kaniz) — Writing on AI, engineering leadership, fintech, game systems, and lessons from building things."
+permalink: /blog/
+---
+
+<main class="page">
+  <div class="container">
+    <h1 class="essays-page__title" data-reveal>Essays</h1>
+    <p class="essays-page__desc" data-reveal>Thinking out loud about building software, leading people, and the messy reality of making things that work.</p>
+
+    <div class="essays-list" data-reveal-stagger>
+      {%- for post in collections.posts | reverse %}
+      <a href="{{ post.url }}" class="blog-card">
+        <div class="blog-card__meta">
+          <span class="blog-card__date">{{ post.date | formatDate }}</span>
+          <span class="blog-card__dot"></span>
+          <span class="blog-card__read-time">{{ post.data.readTime }}</span>
+        </div>
+        <h2 class="blog-card__title">{{ post.data.title }}</h2>
+        <p class="blog-card__excerpt">{{ post.data.excerpt }}</p>
+        <span class="blog-card__category tag">{{ post.data.category }}</span>
+      </a>
+      {%- endfor %}
+    </div>
+  </div>
+</main>

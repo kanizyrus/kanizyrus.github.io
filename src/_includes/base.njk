@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ description or site.description }}">
+  <title>{{ title }}{% if title != site.title %} — {{ site.title }}{% endif %}</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/nav.css">
+  {%- if extraCss %}
+  {%- for css in extraCss %}
+  <link rel="stylesheet" href="/css/{{ css }}">
+  {%- endfor %}
+  {%- endif %}
+  <link rel="stylesheet" href="/css/animations.css">
+</head>
+<body>
+  <nav class="nav" id="main-nav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">Kaniz<span class="dot">.</span>Dev</a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav__links" id="nav-links">
+        <a href="/blog/" class="nav__link{% if navActive == 'essays' %} nav__link--active{% endif %}">Essays</a>
+        <a href="/about/" class="nav__link{% if navActive == 'about' %} nav__link--active{% endif %}">About</a>
+      </div>
+    </div>
+  </nav>
+
+  {{ content | safe }}
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>&copy; {{ year }} Kaniz.Dev</p>
+      <div class="footer__links">
+        <a href="/blog/">Essays</a>
+        <a href="/about/">About</a>
+        <a href="{{ site.github }}" target="_blank" rel="noopener">GitHub</a>
+        <a href="{{ site.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+  <script src="/js/scroll.js"></script>
+</body>
+</html>

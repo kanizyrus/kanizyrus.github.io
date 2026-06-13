@@ -1,0 +1,28 @@
+/* Tags */
+.tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--fs-label);
+  color: var(--text-muted);
+  background: var(--bg-secondary);
+  border: none;
+  padding: 0.25em 0.6em;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.02em;
+}
+
+/* Loading */
+.post-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-3xl);
+}
+
+.post-loading__cursor {
+  display: inline-block;
+  width: 1.5px;
+  height: 1.1em;
+  background: var(--accent);
+  animation: blink 1.2s step-end infinite;
+}

@@ -9,5 +9,8 @@ Desktop.ini
 *.swp
 *.swo
 
-# Node (if ever used locally)
+# Node
 node_modules/
+
+# Eleventy build output
+_site/

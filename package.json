@@ -1,0 +1,24 @@
+{
+  "name": "lucid-hypatia",
+  "version": "1.0.0",
+  "description": "Personal publication and digital garden by Ping-Hsien Lin (Kaniz).",
+  "main": "index.js",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kanizyrus/kanizyrus.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kanizyrus/kanizyrus.github.io/issues"
+  },
+  "homepage": "https://github.com/kanizyrus/kanizyrus.github.io#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6"
+  }
+}
