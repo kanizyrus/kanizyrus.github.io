@@ -5,6 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{{ description or site.description }}">
   <title>{{ title }}{% if title != site.title %} — {{ site.title }}{% endif %}</title>
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description or excerpt or site.description }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:type" content="{% if layout == 'post.njk' %}article{% else %}website{% endif %}">
+  <meta property="og:image" content="{{ site.url }}/assets/og-image.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ description or excerpt or site.description }}">
+  <meta name="twitter:image" content="{{ site.url }}/assets/og-image.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/feed.xml">
+
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,10 +41,12 @@
   <link rel="stylesheet" href="/css/animations.css">
 </head>
 <body>
-  <nav class="nav" id="main-nav">
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <nav class="nav" id="main-nav" aria-label="Main navigation">
     <div class="nav__inner">
       <a href="/" class="nav__logo">Kaniz<span class="dot">.</span>Dev</a>
-      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <div class="nav__links" id="nav-links">
@@ -35,7 +56,9 @@
     </div>
   </nav>
 
-  {{ content | safe }}
+  <div id="main-content">
+    {{ content | safe }}
+  </div>
 
   <footer class="footer">
     <div class="footer__inner">

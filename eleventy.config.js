@@ -1,4 +1,25 @@
-module.exports = function(eleventyConfig) {
+import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+
+export default function(eleventyConfig) {
+
+  // Plugins
+  eleventyConfig.addPlugin(feedPlugin, {
+    type: "atom",
+    outputPath: "/feed.xml",
+    collection: {
+      name: "posts",
+      limit: 20,
+    },
+    metadata: {
+      language: "en",
+      title: "Kaniz.Dev",
+      subtitle: "Ping-Hsien Lin. Writing about building software, leading people, and figuring things out.",
+      base: "https://kanizyrus.github.io/",
+      author: {
+        name: "Ping-Hsien Lin",
+      }
+    }
+  });
 
   // Passthrough copy — CSS, JS, and assets go through unchanged
   eleventyConfig.addPassthroughCopy("src/css");
@@ -27,6 +48,11 @@ module.exports = function(eleventyConfig) {
     const year = d.getFullYear();
     const month = String(d.getMonth() + 1).padStart(2, '0');
     return `${year}.${month}`;
+  });
+
+  // ISO date for sitemap and meta tags
+  eleventyConfig.addFilter("isoDate", function(date) {
+    return new Date(date).toISOString();
   });
 
   return {
